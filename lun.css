@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+ul > li a img {
+  position: relative;
+  float: left;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+}
+
+ul {
+  position: absolute;
+  list-style: none;
+  width: 3600px;
+  height: 400px;
+  left: -400px;
+}
+
+div.img {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+div.span {
+  position: relative;
+  left: 130px;
+  bottom: 30px;
+  width: 140px;
+  z-index: 2;
+  cursor: pointer;
+}
+div.span span{
+  float: left;
+  margin-right: 6px;
+  margin-left: 6px;
+  width: 8px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(255, 87, 174, 0.5);
+}
+.arrow{
+  width: 400px;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  height: 40px;
+  line-height: 80px;
+  position: absolute;
+  top: 190px;
+  color: #FFF;
+  z-index: 3;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.arrow-left{
+  display: none;  //点到再改
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: rgba(140, 140, 140, 0.3);
+  border-radius: 50%;
+}
+.arrow-right{
+  display: none;  //点到再改
+  float: right;
+  width: 40px;
+  height: 40px;
+  background: rgba(140, 140, 140, 0.3);
+
+  border-radius: 50%;
+}
+div .span .current {
+  background-color: rgba(255, 87, 174, 1);
+}
