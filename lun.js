@@ -78,7 +78,7 @@ function moveleft(want) {
     wantIndex = -400;
     wantIndex = -400;
   }
-  once = (wantIndex - parseInt(nowIndex)) / 50;  //回头再改这里让他走的平滑
+  once = (wantIndex - parseInt(nowIndex)) / 50;
   dotsColorChange(-(now + want));
 
   move();
@@ -100,7 +100,7 @@ function move() {
 
 function moveauto() {
   timer1 = setInterval(rArrow.onclick, 3000);
-//  console.log(rArrow.onclick);  //定时效果就是。。让他4秒触发一次
+//  console.log(rArrow.onclick);  //3秒触发一次
 }
 //圆点点击！
 function dotsClick() {
